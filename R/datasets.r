@@ -39,8 +39,16 @@
 
 #' A genlight object created via the gl.read.dart function
 #'
-#' This is a test data set on turtles. 250 individuals, 255 loci in >30 
-#' populations.
+#' This is a test data set on turtles. 274 individuals, 755 loci in 31
+#' populations. Includes a captive-bred population (EmmacCaptBred, n = 24)
+#' with known pedigree structure - parent-offspring, full-sib, half-sib and
+#' first-cousin pairs bred from six wild-caught founders drawn from six
+#' different populations - for testing kinship-based analyses. Pedigree
+#' truth (sire, dam, cohort) and COLONY-style offspring/mother/father
+#' flags are recorded in ind.metrics. 500 of the loci are simulated
+#' (CloneID prefix SIM) with intermediate allele frequencies and
+#' Balding-Nichols population structure so that kinship classes are
+#' statistically recoverable; the original 255 DArT loci are unchanged.
 #' @name testset.gl
 #' @format genlight object
 #' @docType data
